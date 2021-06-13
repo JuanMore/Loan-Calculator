@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+
+    <title style="background-color: rgb(160, 160, 154);">Tip Calculator</title>
+</head>
+<body style="background-color: rgb(189, 189, 228);">
+    <div class="container" style="width: fit-content;">
+    <div class="card mt-5 align-items-center">
+        <div class="card-header">
+            <h1 class ="display-5 text-center text-primary">Tip Calculator</h1>
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <label class="form-label mt-3">Bill amount?</label>
+                <div class="form-group">
+                  <div class="input-group mb-1">
+                    <span class="input-group-text">$</span>
+                    <input type="text" id="bill" class="form-control" aria-label="Amount">
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="card-body text-center">
+            <div class="form-group">
+                <fieldset>
+                  <label class="form-label" for="service">How was your service</label>
+                  <select class="form-select" id="service">
+                    <option value="0.4">Exceptional</option>
+                    <option value="0.3">Good</option>
+                    <option value="0.15">Satisfactory</option>
+                    <option value="0.1">Bad</option>
+                    <option value="0.05">Worst</option>
+                  </select>
+                </fieldset>
+              </div>
+        </div>
+        <div class="card-body text-center">
+            <div class="form-group">
+                <label for="split" class="form-label">How many people are splitting the bill?</label>
+                <select class="form-select" id="split">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+        </div>
+        <div class="button">
+            <button type="button" id="calculate" class="btn mb-3 btn-primary">CALCULATE TIP</button>
+        </div>
+        <div class="card-footer">
+        <div id="totalTip">
+            <h4 class="text-info">$<span id="tip">0.00<small id="each">each</small></span>
+    <medium id="each" class="text-primary">Per Person</medium>
+</h4>
+        </div>
+    </div>
+    </div>
+</div>
+
+    <script src="app.js"></script>
+</body>
+</html>
